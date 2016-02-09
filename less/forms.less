@@ -354,6 +354,10 @@ input[type="checkbox"] {
   }
 }
 
+input.input-small{
+  width: intrinsic;
+}
+
 .input-lg {
   .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @input-border-radius-large);
 }
@@ -612,7 +616,10 @@ input[type="checkbox"] {
   }
 }
 
-::-webkit-input-placeholder { color: @secondary; } /* WebKit */
-:-moz-placeholder { color: @secondary; } /* Firefox 18- */
-::-moz-placeholder { color: @secondary; } /* Firefox 19+ */
-:-ms-input-placeholder { color: @secondary; } /* IE 10+ */
+input{
+  color: @secondary;
+  ::-webkit-input-placeholder { color: @secondary; } /* WebKit */
+  :-moz-placeholder { color: @secondary; } /* Firefox 18- */
+  ::-moz-placeholder { color: @secondary; } /* Firefox 19+ */
+  :-ms-input-placeholder { color: @secondary; } /* IE 10+ */
+}
