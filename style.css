@@ -5884,7 +5884,8 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  min-height: 100vh;
+  background-color: #27262D;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6536,6 +6537,10 @@ hr {
 }
 .padding-top--xlarge {
   padding-top: 80px;
+}
+.padding-top-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .bg-primary {
   background-color: #FF9900;
