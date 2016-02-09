@@ -1300,6 +1300,9 @@ small,
 .small {
   font-size: 85%;
 }
+.text-large {
+  font-size: 1.5em;
+}
 mark,
 .mark {
   background-color: #fcf8e3;
@@ -3109,27 +3112,27 @@ fieldset[disabled] .btn-default.focus {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: #27262D;
+  background-color: #FF9900;
+  border-color: #FF9900;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  color: #27262D;
+  background-color: #cc7a00;
+  border-color: #804d00;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #27262D;
+  background-color: #cc7a00;
+  border-color: #c27400;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #27262D;
+  background-color: #cc7a00;
+  border-color: #c27400;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3140,9 +3143,9 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  color: #27262D;
+  background-color: #a86500;
+  border-color: #804d00;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3158,12 +3161,12 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #FF9900;
+  border-color: #FF9900;
 }
 .btn-primary .badge {
-  color: #337ab7;
-  background-color: #fff;
+  color: #FF9900;
+  background-color: #27262D;
 }
 .btn-success {
   color: #fff;
@@ -6493,6 +6496,15 @@ button.close {
   margin-left: auto;
   margin-right: auto;
 }
+.center-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .pull-right {
   float: right !important;
 }
@@ -6525,6 +6537,18 @@ hr {
   border-top: 2px solid #FF9900;
   width: 150px;
   margin-right: 0px;
+}
+.margin-top {
+  margin-top: 10px;
+}
+.margin-top--xsmall {
+  margin-top: 2.5px;
+}
+.margin-top--small {
+  margin-top: 5px;
+}
+.margin-top--large {
+  margin-top: 20px;
 }
 .margin-bottom {
   margin-bottom: 20px;
