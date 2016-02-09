@@ -6493,6 +6493,15 @@ button.close {
   margin-left: auto;
   margin-right: auto;
 }
+.center-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .pull-right {
   float: right !important;
 }
@@ -6526,8 +6535,21 @@ hr {
   width: 150px;
   margin-right: 0px;
 }
+.no-margin {
+  margin: 0px;
+}
 .margin-bottom {
   margin-bottom: 20px;
+}
+.margin-bottom--large {
+  margin-bottom: 40px;
+}
+.margin-bottom--xlarge {
+  margin-bottom: 60px;
+}
+.margin-sides {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .padding-top {
   padding-top: 40px;
@@ -6553,6 +6575,27 @@ hr {
 }
 .color-light {
   color: #fff;
+}
+.align-top {
+  vertical-align: top;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.align-bottom {
+  vertical-align: bottom;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.table-cell {
+  display: table-cell;
 }
 @-ms-viewport {
   width: device-width;
@@ -6775,10 +6818,6 @@ hr {
   width: 10px !important;
   height: 10px;
 }
-.icon--iconed--normal {
-  width: 15px !important;
-  height: 15px;
-}
 .icon--iconed {
   width: 20px !important;
   height: 20px;
@@ -6794,20 +6833,6 @@ hr {
 .icon--iconed--xlarge {
   width: 32px !important;
   height: 32px;
-}
-@media (min-width: 768px) {
-  footer .icon--iconed--xlarge {
-    width: 20px !important;
-    height: 20px;
-  }
-}
-.icon--iconed--xxlarge {
-  width: 50px !important;
-  height: 50px;
-}
-.icon--iconed--xxxlarge {
-  width: 70px !important;
-  height: 70px;
 }
 /*------------------------------------*\
   #COLOR

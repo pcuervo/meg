@@ -12,6 +12,9 @@
 .center-block {
   .center-block();
 }
+.center-full {
+  .center-full();
+}
 .pull-right {
   float: right !important;
 }
@@ -61,8 +64,13 @@ hr{
 }
 
 // Margin
+.no-margin{ margin: 0px;}
 
 .margin-bottom{ margin-bottom: (@margin*2);}
+.margin-bottom--large{ margin-bottom: (@margin*4);}
+.margin-bottom--xlarge{ margin-bottom: (@margin*6);}
+
+.margin-sides{ margin-left: @margin; margin-right: @margin;}
 
 // Padding
 
@@ -88,3 +96,14 @@ hr{
 //Color
 
 .color-light{ color: @light;}
+
+//alingnemt
+.align-top{ vertical-align: top; }
+.align-middle{ vertical-align: middle; }
+.align-bottom{ vertical-align: bottom; }
+
+// Displays
+.block{ display: block; }
+.inline{ display: inline; }
+.inline-block{ display: inline-block; }
+.table-cell { display: table-cell;}
