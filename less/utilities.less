@@ -13,7 +13,7 @@
   .center-block();
 }
 .center-full {
-  .center-full();
+  .center-full()
 }
 .pull-right {
   float: right !important;
@@ -64,6 +64,10 @@ hr{
 }
 
 // Margin
+.margin-top{ margin-top: @margin; }
+.margin-top--xsmall{ margin-top: (@margin/4); }
+.margin-top--small{ margin-top: (@margin/2); }
+.margin-top--large{ margin-top: (@margin*2); }
 .no-margin{ margin: 0px;}
 
 .margin-bottom{ margin-bottom: (@margin*2);}

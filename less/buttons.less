@@ -59,7 +59,6 @@
   }
 }
 
-
 // Alternate buttons
 // --------------------------------------------------
 
@@ -67,7 +66,7 @@
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
 }
 .btn-primary {
-  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  .button-variant(@secondary; @primary; @primary);
 }
 // Success appears as green
 .btn-success {
@@ -84,6 +83,17 @@
 // Danger and error appear as red
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
+// Animated button
+
+.btn-rotate{
+  cursor: pointer;
+  &:hover,
+  &:focus {
+      transform: rotate(90deg);
+      .transition;
+    }
 }
 
 
@@ -164,3 +174,5 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+
