@@ -302,3 +302,13 @@ address {
   font-style: normal;
   line-height: @line-height-base;
 }
+
+a{
+  text-decoration: none;
+  color: @light;
+  &:hover,
+  &:focus{
+    color: @primary;
+    text-decoration: none;
+  }
+}
