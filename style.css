@@ -3411,14 +3411,14 @@ fieldset[disabled] .btn-danger.focus {
 }
 .btn-rotate {
   cursor: pointer;
-}
-.btn-rotate:hover,
-.btn-rotate:focus {
-  transform: rotate(90deg);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+}
+.btn-rotate:hover,
+.btn-rotate:focus {
+  transform: rotate(90deg);
 }
 .btn-link {
   color: #337ab7;
