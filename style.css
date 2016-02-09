@@ -6573,8 +6573,14 @@ hr {
 .bg-tertiary {
   background-color: #2585A6;
 }
+.bg-none {
+  background: none;
+}
 .color-light {
   color: #fff;
+}
+.color-primary {
+  color: #FF9900;
 }
 .align-top {
   vertical-align: top;
@@ -6596,6 +6602,9 @@ hr {
 }
 .table-cell {
   display: table-cell;
+}
+.no-border {
+  border: none;
 }
 @-ms-viewport {
   width: device-width;
