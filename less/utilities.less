@@ -70,6 +70,8 @@ hr{
 .margin-top--large{ margin-top: (@margin*2); }
 .no-margin{ margin: 0px;}
 
+.margin-bottom--xs--large{ @media (max-width: @screen-xs){margin-bottom: (@margin*4); }}
+
 .margin-bottom{ margin-bottom: (@margin*2);}
 .margin-bottom--large{ margin-bottom: (@margin*4);}
 .margin-bottom--xlarge{ margin-bottom: (@margin*6);}
@@ -79,6 +81,8 @@ hr{
 .margin-right{ margin-right: @margin;}
 
 // Padding
+
+.padding-bottom{ padding-bottom: (@padding-large-vertical*4);}
 
 .padding-top{ padding-top: (@padding-large-vertical*4);}
 .padding-top--large{ padding-top: (@padding-large-vertical*6);}
