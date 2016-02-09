@@ -6623,6 +6623,12 @@ hr {
     padding-right: 25%;
   }
 }
+@media (min-width: 992px) {
+  .padding--sides--md {
+    padding-left: 25%;
+    padding-right: 15%;
+  }
+}
 .bg-primary {
   background-color: #FF9900;
 }
