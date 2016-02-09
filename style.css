@@ -6515,7 +6515,16 @@ button.close {
   position: fixed;
 }
 hr {
-  border-top: 2px solid #FF9900;
+  border-top: 2px solid #2585A6;
+}
+.bg-primary {
+  background-color: #FF9900;
+}
+.bg-secondary {
+  background-color: #27262D;
+}
+.bg-tertiary {
+  background-color: #2585A6;
 }
 @-ms-viewport {
   width: device-width;
