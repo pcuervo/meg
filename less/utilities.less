@@ -12,11 +12,9 @@
 .center-block {
   .center-block();
 }
-
 .center-full {
   .center-full()
 }
-
 .pull-right {
   float: right !important;
 }
@@ -70,7 +68,13 @@ hr{
 .margin-top--xsmall{ margin-top: (@margin/4); }
 .margin-top--small{ margin-top: (@margin/2); }
 .margin-top--large{ margin-top: (@margin*2); }
+.no-margin{ margin: 0px;}
+
 .margin-bottom{ margin-bottom: (@margin*2);}
+.margin-bottom--large{ margin-bottom: (@margin*4);}
+.margin-bottom--xlarge{ margin-bottom: (@margin*6);}
+
+.margin-sides{ margin-left: @margin; margin-right: @margin;}
 
 // Padding
 
@@ -101,6 +105,16 @@ hr{
 .color-light{ color: @light;}
 .color-primary{ color: @primary;}
 
+//alingnemt
+.align-top{ vertical-align: top; }
+.align-middle{ vertical-align: middle; }
+.align-bottom{ vertical-align: bottom; }
+
+// Displays
+.block{ display: block; }
+.inline{ display: inline; }
+.inline-block{ display: inline-block; }
+.table-cell { display: table-cell;}
 
 .no-border{
   border: none;

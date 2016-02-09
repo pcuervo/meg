@@ -72,43 +72,64 @@
 							<p><em>Members</em></p>
 						</a>
 						<hr>
-						<p><em>Contact</em></p>
+						<a id="demo02" href="#modalcontacto">
+                            <p><em>Contact</em></p>
+                        </a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!--
-		<div id="animatedModal" class="[ color-light ]">
-			<div class="close-animatedModal [ text-center ][ padding-top-bottom ]">
-				CLOSE MODAL
-			</div>
+        <div id="modalcontacto" class="[ color-light ]">
+            <div class="close-modalcontacto [ text-center ][ padding-top-bottom ]">
+                <img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/close.svg">
+            </div>
 
-			<div class="modal-content">
-				<div class="[ container ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<h2 class="[ text-center ]">Héctor Nieto</h2>
-							<p>+1 786 218.9917</p>
-							<p>hector@miamimeg.com</p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 ]">
-							<h2 class="[ text-center ]">Jorge Navarro</h2>
-							<p>+1 305 345.3334</p>
-							<p>jicamon@miamimeg.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>-->
+            <div class="modal-content">
+                <div class="[ container ][ padding-top ]">
+                    <div class="[ row ][ padding--sides--xsm--large ]">
+                        <div class="[ col-xs-12 col-sm-6 ][ margin-bottom ]">
+                            <h2 class="[ text-center ][ margin-bottom--large ]">Héctor Nieto</h2>
+                            <div class="[ margin-bottom ]">
+                                <a href="tel:+17862189917">
+                                    <img class="[ margin-sides ][ inline-block align-middle ][ svg ][ icon icon--iconed icon--fill ][ color-light ]"src="icons/phone.svg">
+                                    <p class="[ no-margin ][ inline-block align-middle ]">+1 786 218.9917</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="mailto:hector@miamimeg.com">
+                                    <img class="[ margin-sides ][ inline-block align-middle ][ svg ][ icon icon--iconed icon--fill ][ color-light ]"src="icons/email.svg">
+                                    <p class="[ no-margin ][ inline-block align-middle ]">hector@miamimeg.com</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="[ col-xs-12 col-sm-6 ]">
+                            <h2 class="[ text-center ][ margin-bottom--large ]">Jorge Navarro</h2>
+                            <div class="[ margin-bottom ]">
+                                <a href="tel:+13053453334">
+                                    <img class="[ margin-sides ][ inline-block align-middle ][ svg ][ icon icon--iconed icon--fill ][ color-light ]"src="icons/phone.svg">
+                                    <p class="[ no-margin ][ inline-block align-middle ]">+1 305 345.3334</p>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="mailto:jicamon@miamimeg.com">
+                                    <img class="[ margin-sides ][ inline-block align-middle ][ svg ][ icon icon--iconed icon--fill ][ color-light ]"src="icons/email.svg">
+                                    <p class="[ no-margin ][ inline-block align-middle ]">jicamon@miamimeg.com</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div> -->
 
-		<!--DEMO01-->
+		<!--Modal MEMBER -->
 		<div id="animatedModal" class="[ color-light ]">
 			<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-			<div class="close-animatedModal [ text-center ][ padding-top-bottom ]">
-				<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/close.svg">
+			<div class="close-animatedModal [ text-center ][ padding-top-bottom ][ btn-rotate ]">
+				<img class="[ icon-responsive ]" src="icons/close-circle.svg">
 			</div>
-
+			
 			<div class="modal-content">
 				<div class="[ container ]">
 					<div class="[ row ]">
@@ -116,11 +137,11 @@
 							<form action="" class="[ text-center ]">
 								<div>
 									<img class="[ svg ][ icon icon--iconed--large icon--fill ][ color-primary ]"src="icons/account-circle-1.svg">
-									<input type="text" class="[ bg-none no-border ][ text-large ]" placeholder="user">
+									<input type="text" class="[ bg-none no-border ][ text-large text-center ]" placeholder="user">
 								</div>
 								<div>
 									<img class="[ svg ][ icon icon--iconed--large icon--fill ][ color-primary ]"src="icons/key-1.svg">
-									<input type="password" class="[ bg-none no-border ][ text-large ]"  placeholder="Password">
+									<input type="password" class="[ bg-none no-border ][ text-large text-center ]"  placeholder="Password">
 								</div>
 								<button type="submit" class="[ margin-top--large ][ btn btn-primary btn-lg ]">Submit</button>
 							</form>
@@ -151,6 +172,7 @@
 		<script src="js/animatedModal.min.js"></script>
 		<script>
 			$("#demo01").animatedModal();
+			$("#demo02").animatedModal();
 
 		</script>
 	</body>
