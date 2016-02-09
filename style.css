@@ -3018,23 +3018,16 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
-input {
-  color: #27262D;
-  /* WebKit */
-  /* Firefox 18- */
-  /* Firefox 19+ */
-  /* IE 10+ */
-}
-input ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #27262D;
 }
-input :-moz-placeholder {
+:-moz-placeholder {
   color: #27262D;
 }
-input ::-moz-placeholder {
+::-moz-placeholder {
   color: #27262D;
 }
-input :-ms-input-placeholder {
+:-ms-input-placeholder {
   color: #27262D;
 }
 .btn {
