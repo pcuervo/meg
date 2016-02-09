@@ -1530,7 +1530,7 @@ address {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #bfbfbf;
 }
 a:hover,
 a:focus {
@@ -5926,7 +5926,7 @@ button.close {
 .modal-content {
   position: relative;
   min-height: 90vh;
-  background-color: #27262D;
+  background-color: #bfbfbf;
   border-radius: 0px;
   background-clip: padding-box;
   outline: 0;
@@ -6649,6 +6649,12 @@ hr {
 }
 .color-primary {
   color: #FF9900;
+}
+.color-secondary {
+  color: #27262D;
+}
+.color-gray-primary {
+  color: #bfbfbf;
 }
 .align-top {
   vertical-align: top;
