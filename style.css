@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "aw-conqueror-didot", serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1278,6 +1278,12 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
 }
 .lead {
   margin-bottom: 20px;
