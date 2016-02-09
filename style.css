@@ -3019,6 +3019,7 @@ select[multiple].input-lg {
   }
 }
 input {
+  color: #27262D;
   /* WebKit */
   /* Firefox 18- */
   /* Firefox 19+ */
