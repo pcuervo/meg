@@ -6516,7 +6516,7 @@ button.close {
 }
 hr {
   border-top: 2px solid #FF9900;
-  width: 200px;
+  width: 150px;
   margin-right: 0px;
 }
 .margin-bottom {
@@ -6530,6 +6530,18 @@ hr {
 }
 .padding-top--xlarge {
   padding-top: 80px;
+}
+.bg-primary {
+  background-color: #FF9900;
+}
+.bg-secondary {
+  background-color: #27262D;
+}
+.bg-tertiary {
+  background-color: #2585A6;
+}
+.color-light {
+  color: #fff;
 }
 @-ms-viewport {
   width: device-width;
