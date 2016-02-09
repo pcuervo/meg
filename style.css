@@ -2557,7 +2557,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #27262D;
 }
 .form-control {
   display: block;
@@ -2566,7 +2566,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #27262D;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -3019,6 +3019,21 @@ select[multiple].input-lg {
   }
 }
 input {
+  /* WebKit */
+  /* Firefox 18- */
+  /* Firefox 19+ */
+  /* IE 10+ */
+}
+input ::-webkit-input-placeholder {
+  color: #27262D;
+}
+input :-moz-placeholder {
+  color: #27262D;
+}
+input ::-moz-placeholder {
+  color: #27262D;
+}
+input :-ms-input-placeholder {
   color: #27262D;
 }
 .btn {
@@ -6573,7 +6588,7 @@ button.close {
 }
 hr {
   border-top: 2px solid #FF9900;
-  width: 150px;
+  width: 180px;
   margin-right: 0px;
 }
 .margin-top {

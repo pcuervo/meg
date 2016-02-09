@@ -85,7 +85,7 @@ output {
   padding-top: (@padding-base-vertical + 1);
   font-size: @font-size-base;
   line-height: @line-height-base;
-  color: @input-color;
+  color: @secondary;
 }
 
 
@@ -118,7 +118,7 @@ output {
   padding: @padding-base-vertical @padding-base-horizontal;
   font-size: @font-size-base;
   line-height: @line-height-base;
-  color: @input-color;
+  color: @secondary;
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
@@ -617,5 +617,8 @@ input.input-small{
 }
 
 input{
-  color:@secondary;
+  ::-webkit-input-placeholder { color: @secondary; } /* WebKit */
+  :-moz-placeholder { color: @secondary; } /* Firefox 18- */
+  ::-moz-placeholder { color: @secondary; } /* Firefox 19+ */
+  :-ms-input-placeholder { color: @secondary; } /* IE 10+ */
 }
