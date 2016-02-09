@@ -3018,23 +3018,16 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
-input {
-  color: #27262D;
-  /* WebKit */
-  /* Firefox 18- */
-  /* Firefox 19+ */
-  /* IE 10+ */
-}
-input ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #27262D;
 }
-input :-moz-placeholder {
+:-moz-placeholder {
   color: #27262D;
 }
-input ::-moz-placeholder {
+::-moz-placeholder {
   color: #27262D;
 }
-input :-ms-input-placeholder {
+:-ms-input-placeholder {
   color: #27262D;
 }
 .btn {
@@ -5947,7 +5940,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  min-height: 90vh;
+  min-height: 65vh;
   background-color: #bfbfbf;
   border-radius: 0px;
   background-clip: padding-box;
@@ -6607,6 +6600,11 @@ hr {
 .no-margin {
   margin: 0px;
 }
+@media (max-width: 480px) {
+  .margin-bottom--xs--large {
+    margin-bottom: 40px;
+  }
+}
 .margin-bottom {
   margin-bottom: 20px;
 }
@@ -6622,6 +6620,9 @@ hr {
 }
 .margin-right {
   margin-right: 10px;
+}
+.padding-bottom {
+  padding-bottom: 40px;
 }
 .padding-top {
   padding-top: 40px;
