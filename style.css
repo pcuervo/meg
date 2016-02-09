@@ -1303,7 +1303,11 @@ small,
   font-size: 85%;
 }
 .text-large {
+<<<<<<< HEAD
   font-size: 2em;
+=======
+  font-size: 3em;
+>>>>>>> 409b0b628383672b4ef59858751dcebbf1573238
 }
 mark,
 .mark {
