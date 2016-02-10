@@ -32,3 +32,13 @@
     -webkit-appearance: none;
   }
 }
+
+.close-contactModal,
+.close-animatedModal{
+  @media (max-height: 700px){height: 190px;}
+  @media (max-width: @screen-sm) and (orientation: landscape){height: 250px;}
+}
+.close-contactModal{
+  z-index: 100;
+  position: relative;
+}

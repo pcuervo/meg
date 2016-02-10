@@ -1305,19 +1305,18 @@ small,
 }
 .text-large {
   font-size: 2em;
-<<<<<<< HEAD
 }
 .text--large {
-  font-size: 240%;
+  font-size: 200%;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 280px) and (max-width: 767px) {
   .text--large {
-    font-size: 340%;
+    font-size: 300%;
   }
 }
 @media (min-width: 768px) {
   .text--large {
-    font-size: 440%;
+    font-size: 400%;
   }
 }
 .text-xlarge {
@@ -1332,15 +1331,6 @@ small,
   .text-xlarge {
     font-size: 450%;
   }
-=======
-=======
-<<<<<<< HEAD
-  font-size: 2em;
-=======
-  font-size: 3em;
->>>>>>> 409b0b628383672b4ef59858751dcebbf1573238
->>>>>>> 1958235ce846ecb9288a3c2ddb02de38ae24a508
->>>>>>> 578899aa9992a769336ef4e1af491ac82a71832c
 }
 mark,
 .mark {
@@ -3056,16 +3046,16 @@ select[multiple].input-lg {
   }
 }
 ::-webkit-input-placeholder {
-  color: #27262D;
+  color: #969696;
 }
 :-moz-placeholder {
-  color: #27262D;
+  color: #969696;
 }
 ::-moz-placeholder {
-  color: #27262D;
+  color: #969696;
 }
 :-ms-input-placeholder {
-  color: #27262D;
+  color: #969696;
 }
 .btn {
   display: inline-block;
@@ -3547,7 +3537,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 .btn-gray {
-  border: 4px solid #969696;
+  border: 5px solid #969696;
   border-radius: 35px;
   background-color: transparent;
   color: #27262D;
@@ -3558,6 +3548,9 @@ input[type="button"].btn-block {
   .btn-gray {
     font-size: 30px;
   }
+}
+.btn-gray:hover {
+  border: 5px solid #27262D;
 }
 .fade {
   opacity: 0;
@@ -5948,6 +5941,22 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+@media (max-height: 700px) {
+  .close-contactModal,
+  .close-animatedModal {
+    height: 190px;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .close-contactModal,
+  .close-animatedModal {
+    height: 250px;
+  }
+}
+.close-contactModal {
+  z-index: 100;
+  position: relative;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6650,9 +6659,34 @@ hr {
 .no-margin {
   margin: 0px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .margin-bottom--xs--large {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .margin-bottom--landscape {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .margin-bottom--landscape--large {
+    margin-bottom: 60px;
+  }
+}
+@media (orientation: landscape) {
+  .margin-bottom--landscape--xlarge {
+    margin-bottom: 80px;
+  }
+}
+@media (orientation: landscape) {
+  .margin-bottom--landscape--xxlarge {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .margin-top--landscape {
+    margin-top: 40px;
   }
 }
 .margin-bottom {
@@ -6683,6 +6717,21 @@ hr {
 .padding-top--xlarge {
   padding-top: 80px;
 }
+@media (max-height: 450px) {
+  .padding-top--height--large {
+    padding-top: 100px;
+  }
+}
+@media (max-height: 500px) {
+  .padding-top--height {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .padding-top--landscape {
+    padding-top: 40px;
+  }
+}
 .padding-top-bottom {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -6705,14 +6754,38 @@ hr {
     padding-right: 15%;
   }
 }
+.relative {
+  position: relative;
+}
 .width-auto {
   width: auto;
 }
 .width-100 {
   width: 100%;
 }
+.width-80 {
+  width: 80%;
+}
 .width-70 {
   width: 70%;
+}
+.width-variable {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .width-variable {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .width-variable {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .width-variable {
+    width: 60%;
+  }
 }
 .bg-primary {
   background-color: #FF9900;
@@ -6764,6 +6837,12 @@ hr {
 }
 .border-bottom--primary {
   border-bottom: 1px solid #FF9900;
+}
+.border-bottom--gray-light {
+  border-bottom: 2px solid #969696;
+}
+.border-bottom--secondary {
+  border-bottom: 2px solid #27262D;
 }
 .width-auto {
   width: auto;
